@@ -1,0 +1,22 @@
+{
+  "name": "poojawebsite",
+  "version": "1.0.0",
+  "description": "Personal Website of Pooja Singhal",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pooja Singhal",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
