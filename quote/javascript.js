@@ -22,15 +22,18 @@ var quotes = [
 function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+    document.getElementById('firstHeading').innerHTML = "Random Quotes";
 }
 
 function newQuote2() {
     var intQuoteCount = 18; // The number of quotes in your library
+    const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
     var dtNow = new Date();
     var intTZOffset = dtNow.getTimezoneOffset() * 60000; // automatically adjust for user timezone
     var intNow = dtNow.getTime() - intTZOffset;
     var intDay = Math.floor(intNow / 86400000); // The number of 'local' days since Jan 1, 1970
     var intQuoteToDisplay = intDay % intQuoteCount;
+    document.getElementById('firstHeading').innerHTML = "Pooja's Fav. Quote - "+ monthNames[dtNow.getMonth()]+" "+ dtNow.getUTCDate()+ ", " + dtNow.getFullYear();
     document.getElementById('quoteDisplay').innerHTML = quotes[intQuoteToDisplay];
 }
     
